@@ -1,0 +1,36 @@
+{
+  "@context": {
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "schema": "http://schema.org/"
+  },
+  "@id": "http://example.org/hectorgomezlopez",
+  "@type": "foaf:Person",
+  "foaf:name": "Héctor Gómez López",
+  "foaf:age": 21,
+  "schema:address": {
+    "@type": "schema:PostalAddress",
+    "schema:addressCountry": "Spain"
+  },
+  "foaf:workInfoHomepage": {
+    "@type": "foaf:Document",
+    "foaf:primaryTopic": "In Spain I have a part job as a carpenter"
+  },
+  "foaf:studyInfo": {
+    "@type": "schema:EducationalOrganization",
+    "schema:name": "Spain University",
+    "schema:educationalCredentialAwarded": "bachelor degree"
+  },
+  "foaf:studentOf": "https://pietercolpaert.be/teaching/kg/#2023-2024",
+  "foaf:knows": [
+    {
+      "@id": "http://example.org/jensdeprez",
+      "@type": "foaf:Person",
+      "foaf:name": "Jens Deprez"
+    },
+    {
+      "@id": "http://example.org/pietermorliron",
+      "@type": "foaf:Person",
+      "foaf:name": "Pieter Morliron"
+    }
+  ]
+}
