@@ -1,0 +1,28 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schema: <http://schema.org/> .
+
+<http://example.org/hectorgomezlopez> a foaf:Person ;
+  foaf:name "Héctor Gómez López" ;
+  foaf:age 21 ;
+  schema:address [
+    schema:addressCountry "Spain"
+  ] ;
+  foaf:workInfoHomepage [
+    a foaf:Document ;
+    foaf:primaryTopic "In Spain I have a part job as a carpenter"
+  ] ;
+  foaf:studyInfo [
+    a schema:EducationalOrganization ;
+    schema:name "Spain University" ;
+    schema:educationalCredentialAwarded "bachelor degree"
+  ] ;
+  foaf:studentOf "Knowledge Graphs" ;
+  foaf:knows <http://example.org/jensdeprez>,
+             <http://example.org/pietermorliron> .
+
+<http://example.org/jensdeprez> a foaf:Person ;
+  foaf:name "Jens Deprez" .
+
+<http://example.org/pietermorliron> a foaf:Person ;
+  foaf:name "Pieter Morliron" .
